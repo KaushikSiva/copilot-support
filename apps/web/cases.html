@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COPILOT SUPPORT | Case Workspace</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="case">
+    <header class="workspace-header">
+      <div class="workspace-header-inner">
+        <div>
+          <a class="brandmark brandmark-dark" href="/">COPILOT SUPPORT</a>
+          <p class="workspace-subtitle">Selected Case + Live Transcript</p>
+        </div>
+
+        <div class="workspace-header-meta">
+          <span id="workspace-date" class="mode-pill mode-pill-dark">April 4, 2026</span>
+          <span id="workspace-mode-pill" class="mode-pill mode-pill-dark">Loading Edition</span>
+          <button id="case-bootstrap-btn" class="button button-secondary" type="button">Reprint Demo Data</button>
+          <a class="button button-ghost" href="/">Back to Home</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="workspace-grid">
+      <section class="workspace-panel case-panel">
+        <div class="section-head compact-head">
+          <div>
+            <p class="section-kicker">Selected Case</p>
+            <h2 id="detail-title">Awaiting selection</h2>
+          </div>
+          <button id="start-call-btn" class="button button-primary" type="button" disabled>Call Customer</button>
+        </div>
+
+        <div id="order-facts" class="facts-grid empty-state">
+          Select a case from the home page to inspect the order and prepare the live call.
+        </div>
+
+        <div class="workspace-subgrid">
+          <div class="workspace-block">
+            <p class="section-kicker">Manifest</p>
+            <ul id="item-list" class="lined-list"></ul>
+          </div>
+
+          <div class="workspace-block workspace-block-ink">
+            <div class="support-desk-head">
+              <div>
+                <p class="section-kicker">Support Desk</p>
+                <h3>Say to Customer</h3>
+              </div>
+              <span id="call-state-pill" class="meta-chip">Idle</span>
+            </div>
+
+            <p id="support-order-context" class="support-order-context">Selected order: --</p>
+            <label class="field-label" for="override-text">Say to Customer</label>
+            <div class="support-inline-row">
+              <input
+                id="override-text"
+                class="news-input support-line-input"
+                type="text"
+                placeholder="Type the next line you want the agent to speak about this order..."
+              />
+              <button id="arm-override-btn" class="button button-accent" type="button" disabled>Say</button>
+            </div>
+
+            <p id="override-status" class="override-status">Start a call to send a live support prompt.</p>
+            <p class="action-note">
+              Each prompt applies to the next agent turn. Include the selected order when the line depends on the case,
+              and sending another one replaces the currently queued prompt.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace-panel transcript-panel">
+        <div class="section-head compact-head">
+          <div>
+            <p class="section-kicker">Live Transcript</p>
+            <h2 id="call-title">No active call</h2>
+          </div>
+          <div class="meta-stack">
+            <span id="call-status" class="meta-badge">Idle</span>
+            <span id="refund-reference" class="meta-reference">Ref: --</span>
+          </div>
+        </div>
+
+        <ul id="transcript-list" class="transcript-list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer-bar">
+      <span>Case workspace for live recovery calls and transcript review.</span>
+      <span>Edition: COPILOT SUPPORT / Live Case Desk</span>
+    </footer>
+
+    <script src="/app-config.js"></script>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

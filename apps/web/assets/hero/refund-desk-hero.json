@@ -1,0 +1,16 @@
+{
+  "provider": "MiniMax",
+  "model": "MiniMax-Hailuo-2.3",
+  "duration": 6,
+  "resolution": "1080P",
+  "task_id": "384133312569544",
+  "file_id": 384133867565135,
+  "output_path": "/Users/kaushiksivakumar/workspace/voicecall-insforge-refunds/apps/web/assets/hero/refund-desk-hero.mp4",
+  "prompt": "Photorealistic live-action promotional hero video for the homepage of a premium customer support app called Refund Desk.\n\nReal corporate call center environment, believable North American operations floor, one primary subject in focus:\na calm customer support operator wearing a headset at a modern desk, with printed order sheets, a notebook, and a muted workstation.\n\nThe operator is assisted by an AI calling platform that can place calls, resolve customer problems, and accept live speaking guidance from a human agent.\nShow the human operator quietly reviewing a customer issue, watching a call progress, and subtly typing one short intervention while the AI handles the conversation.\nThe scene should imply AI-human collaboration without showing fake holograms, sci-fi effects, floating dashboards, or readable UI text.\n\nUse premium commercial cinematography, documentary realism, natural office lighting, shallow depth of field, restrained movement,\n35mm lens, smooth slow dolly or push-in, realistic skin texture, authentic hand motion, true-to-life proportions, understated wardrobe,\ncrisp paper textures, quiet monitor glow, and soft ambient movement in the background.\nThe subject should look competent, focused, and trustworthy, not theatrical.\nThe final image must feel like footage from a high-end real startup brand film or enterprise commercial.\n\nNo subtitles, no logos, no watermarks, no visible app interface text, no glitch effects, no cyberpunk palette,\nno surreal motion, no duplicated objects, no extra fingers, no warped hands, no porcelain skin, no exaggerated smiles,\nno CGI sheen, no AI-art look, no stock-footage cheesiness.",
+  "download_url": "https://video-product.cdn.minimax.io/inference_output/video/2026-04-05/7c7acf8a-0212-44fd-ae78-517db545b712/output.mp4",
+  "video_width": 1920,
+  "video_height": 1080,
+  "first_frame_image": null,
+  "last_frame_image": null,
+  "created_at": 1775335763
+}

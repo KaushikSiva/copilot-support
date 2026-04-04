@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COPILOT SUPPORT</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="hero hero-home newsprint-texture">
+      <div class="hero-media-shell" aria-hidden="true">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        >
+          <source src="/assets/hero/refund-desk-hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-media-tint"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="topbar topbar-light">
+          <a class="brandmark" href="/">COPILOT SUPPORT</a>
+          <div class="topbar-actions">
+            <span id="mode-pill" class="mode-pill">Loading Edition</span>
+            <button id="bootstrap-btn" class="button button-secondary" type="button">Reprint Demo Data</button>
+          </div>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy-block">
+            <p class="section-kicker">AI Customer Support Operations</p>
+            <h1>COPILOT SUPPORT</h1>
+            <p class="hero-copy">
+              AI handles outbound recovery calls, keeps the conversation moving across multiple turns, and still takes
+              exact live speaking direction from a human support lead before the next agent turn lands.
+            </p>
+            <div class="hero-actions">
+              <a id="open-cases-cta" class="button button-primary" href="/cases.html">Review Problem Cases</a>
+              <a class="button button-ghost-light" href="#problem-cases">Jump to Queue</a>
+            </div>
+          </div>
+
+          <aside class="hero-side-note">
+            <p class="hero-note-label">Field Summary</p>
+            <p class="hero-note-copy">
+              Live transcript control, order context, refund gating on explicit customer approval, and human prompt
+              injection in one call workflow.
+            </p>
+            <div class="edition-line">
+              <span>Vol. 1</span>
+              <span id="today-date">April 4, 2026</span>
+              <span>West Coast Desk</span>
+            </div>
+          </aside>
+        </div>
+
+        <section class="summary-rail" aria-label="Operational summary">
+          <article class="summary-cell">
+            <p class="summary-label">Problem Cases</p>
+            <p id="summary-problematic" class="summary-value">--</p>
+            <p class="summary-note">Orders waiting for a customer decision.</p>
+          </article>
+          <article class="summary-cell">
+            <p class="summary-label">Refunded</p>
+            <p id="summary-refunded" class="summary-value">--</p>
+            <p class="summary-note">Orders closed after explicit approval.</p>
+          </article>
+          <article class="summary-cell">
+            <p class="summary-label">Live Calls</p>
+            <p id="summary-live-calls" class="summary-value">--</p>
+            <p class="summary-note">Currently active callback sessions.</p>
+          </article>
+          <article class="summary-cell">
+            <p class="summary-label">Runtime</p>
+            <p id="summary-runtime" class="summary-value summary-runtime">--</p>
+            <p id="summary-runtime-detail" class="summary-note">Loading transport and speech stack.</p>
+          </article>
+        </section>
+      </div>
+    </header>
+
+    <main class="home-main">
+      <section id="problem-cases" class="home-section queue-section">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Queue</p>
+            <h2>Problem Cases</h2>
+            <p class="section-note">
+              Open a case to move into the live workspace for the selected order, transcript, and human override desk.
+            </p>
+          </div>
+          <a class="button button-secondary" href="/cases.html">Open Workspace</a>
+        </div>
+
+        <div class="table-wrap home-table-wrap">
+          <table class="ledger-table">
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Issue</th>
+                <th>Refund</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="home-orders-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="home-section activity-section">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Call Activity</p>
+            <h2>Recent Resolution Calls</h2>
+            <p class="section-note">Review the last sessions and reopen the relevant case workspace directly.</p>
+          </div>
+        </div>
+
+        <ul id="home-call-list" class="activity-list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer-bar">
+      <span>Printed for operators running outbound support callbacks.</span>
+      <span>Edition: COPILOT SUPPORT / Customer Recovery Desk</span>
+    </footer>
+
+    <script src="/app-config.js"></script>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
