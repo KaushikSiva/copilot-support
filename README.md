@@ -17,6 +17,19 @@ apps/
   web/   Static Newsprint-style operations dashboard
 ```
 
+## Tech Stack
+
+For the full stack breakdown, see [TECH_STACK.md](/Users/kaushiksivakumar/workspace/voicecall-insforge-refunds/TECH_STACK.md).
+
+At a high level:
+
+- Frontend: static HTML, CSS, and vanilla JavaScript with a Newsprint-style UI
+- API: Python FastAPI served by Uvicorn
+- Voice worker: Python LiveKit agent worker
+- Data: Insforge tables with a local JSON fallback for offline/demo mode
+- Telephony: LiveKit SIP plus Twilio PSTN
+- AI: OpenAI STT/TTS, OpenAI LLM, and optional LM Studio PersonaPlex path
+
 ## Demo Flow
 
 1. Bootstrap 144 ecommerce orders, all in `problematic` status.
